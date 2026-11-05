@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#202a36" />
+  <meta name="description" content="Không gian quản lý cá nhân của Ngọc — công việc, mục tiêu, dự án và học tập." />
+  <title>Ngọc — Personal Space</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="ambient-garden" aria-hidden="true">
+    <span class="floating-bloom bloom-a"><i></i></span>
+    <span class="floating-bloom bloom-b"><i></i></span>
+    <span class="floating-bloom bloom-c"><i></i></span>
+    <span class="floating-bloom bloom-d"><i></i></span>
+    <span class="floating-butterfly butterfly-a"><i class="wing wing-left"></i><i class="wing wing-right"></i><i class="butterfly-body"></i></span>
+    <span class="floating-butterfly butterfly-b"><i class="wing wing-left"></i><i class="wing wing-right"></i><i class="butterfly-body"></i></span>
+    <span class="floating-butterfly butterfly-c"><i class="wing wing-left"></i><i class="wing wing-right"></i><i class="butterfly-body"></i></span>
+  </div>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#dashboard" aria-label="Ngọc"><span class="brand-mark">N</span><span class="brand-name">Ngọc</span></a>
+      <div class="side-label" data-i18n="workspace">KHÔNG GIAN CỦA BẠN</div>
+      <nav id="navigation" aria-label="Điều hướng chính"></nav>
+      <div class="sidebar-bottom">
+        <div class="side-note"><span class="note-orb">✳</span><p data-i18n="sidebarNote">Mỗi bước nhỏ đều đưa bạn đến gần hơn với phiên bản tốt nhất.</p></div>
+        <button class="profile-mini" id="profileButton"><span class="avatar avatar-small">N</span><span><strong>Ngọc</strong><small data-i18n="personalSpace">Không gian cá nhân</small></span><span class="profile-dots">···</span></button>
+      </div>
+    </aside>
+    <main class="main-area">
+      <header class="topbar">
+        <button id="mobileMenu" class="icon-button mobile-menu" aria-label="Mở menu">☰</button>
+        <div class="crumb-wrap"><button id="collapseMenu" class="icon-button collapse-menu" aria-label="Thu gọn menu">☰</button><div class="breadcrumb"><span data-i18n="breadcrumb">Không gian cá nhân</span><span class="crumb-sep">/</span><strong id="crumbCurrent">Tổng quan</strong></div></div>
+        <div class="top-actions">
+          <div class="date-chip" id="todayChip" aria-label="Ngày hôm nay"></div>
+          <button class="icon-button notification-button" id="notificationButton" aria-label="Thông báo">♧<i></i></button>
+          <div class="language-switch" aria-label="Chọn ngôn ngữ"><button data-lang="vi">VI</button><span></span><button data-lang="zh">中文</button></div>
+          <button class="avatar avatar-top" id="topAvatar" aria-label="Hồ sơ Ngọc">N</button>
+        </div>
+      </header>
+      <div class="content" id="content"></div>
+    </main>
+  </div>
+  <div class="toast-region" id="toastRegion" aria-live="polite"></div>
+  <div class="modal-backdrop" id="modalBackdrop" hidden><section class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div id="modalContent"></div></section></div>
+  <script src="app.js"></script>
+</body>
+</html>
