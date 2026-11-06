@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#fbf7f2"><title>StudyFlow ♡ — A little space to grow</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"><link rel="stylesheet" href="cozy.css">
+</head>
+<body>
+<div class="app-shell">
+  <aside class="sidebar">
+    <a class="brand" href="#dashboard"><span class="brand-mark">✳</span><span>studyflow<small>LEARN WITH CLARITY</small></span></a>
+    <div class="workspace-label">WORKSPACE</div>
+    <div class="workspace"><span class="ws-icon">U</span><span><b>University workspace</b><small>Personal account</small></span><span class="chevron">⌄</span></div>
+    <div class="nav-label">MENU</div>
+    <nav class="nav">
+      <a href="#dashboard" class="nav-link active" data-page="dashboard"><span>◫</span> Dashboard</a>
+      <a href="#messages" class="nav-link" data-page="messages"><span>▤</span> Lark messages <i class="nav-count">3</i></a>
+      <a href="#extraction" class="nav-link" data-page="extraction"><span>✣</span> AI extraction</a>
+      <a href="#review" class="nav-link" data-page="review"><span>☷</span> Review tasks <i class="nav-count review-count">3</i></a>
+      <a href="#tasks" class="nav-link" data-page="tasks"><span>▣</span> Task management</a>
+      <a href="#export" class="nav-link" data-page="export"><span>⇩</span> Excel export <span class="lock-icon">⌑</span></a>
+    </nav>
+    <div class="nav-label settings-label">PREFERENCES</div><nav class="nav"><a href="#settings" class="nav-link" data-page="settings"><span>⚙</span> Settings</a></nav>
+    <div class="sidebar-bottom"><div class="help-card"><div class="help-icon">✦</div><b>Need a hand?</b><p>Get to know your StudyFlow workspace.</p><button class="text-button" id="helpBtn">Visit help center <span>↗</span></button></div><div class="profile"><div class="avatar">N</div><span><b>Nguyen Minh</b><small>Student account</small></span><span class="dots">···</span></div></div>
+  </aside>
+  <main class="main-area">
+    <header class="topbar"><div class="breadcrumbs"><span>Workspace</span><span class="slash">/</span><b id="crumb">Dashboard</b></div><div class="top-actions"><span class="connection"><i></i> Lark not connected</span><button class="icon-btn" aria-label="Notifications">♧<em></em></button><div class="avatar small-avatar">N</div></div></header>
+    <div class="content" id="pageContent"></div>
+  </main>
+</div>
+<div id="toast" class="toast"></div><div id="modalRoot"></div>
+<script src="app.js"></script>
+</body></html>
